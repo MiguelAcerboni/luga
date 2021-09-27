@@ -1,0 +1,43 @@
+.cajasNosotros {
+    background-color: white;
+    padding: 1rem 1rem;
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    grid-template-areas: "unoo    unoo  unoo  cuatroo"
+                        "cincoo  cincoo  cincoo cuatroo"
+                        "doss     doss    doss  doss"
+                        "tress   tress   tress  tress";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.box--unoo {
+    grid-area: unoo;
+    font-size: $tituloSections;
+
+}
+
+.box--doss {
+    grid-area: doss;
+    font-size: 4rem;
+    padding-top: 4rem;
+}
+
+.box--tress {
+    grid-area: tress;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.box--cuatroo {
+    grid-area: cuatroo;
+    background-color: black;
+}
+
+.box--cincoo {
+    grid-area: cincoo;
+    font-size: 2rem;
+    text-align: center;
+}
