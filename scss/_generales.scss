@@ -43,7 +43,22 @@ li {
 
 
 
-
+.navegacion li {
+    text-align: center;
+    list-style: none;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 1rem;
+  
+    a {
+      text-decoration: none;
+      text-align: center;
+      font-size: 2rem;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
 
 .imagen_nav{
     width: 200px;
