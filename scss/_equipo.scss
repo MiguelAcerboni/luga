@@ -1,0 +1,184 @@
+#banner__productos {
+  width: 100%;
+  align-items: center;
+}
+
+
+/* SECCION 2 EQUIPO*/
+
+.seccionDosEquipo {
+  background-color: white;
+}
+
+.container__equipo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 2.5rem;
+}
+
+.card__equipo {
+  background-color: white;
+  width: 30rem;
+  height: 40rem;
+  margin: 8rem;
+  text-align: center;
+  color: black;
+  border-radius: 15px;
+}
+
+.card__equipo:hover {
+  transform: scale(1.07);
+  transition: all 1s ease;
+}
+
+.card__image__equipo{
+  margin-bottom: 2rem;
+  width: 25rem;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.h2__equipo {
+  color: $verde;
+  padding: 1.5rem;
+  padding-bottom: 2.5rem;
+  font-size: 3rem;
+}
+
+.h2__equipo a {
+  color: $verde;
+}
+
+
+
+/* SECCION 3 EQUIPO*/
+
+.seccionTresEquipo {
+  background-color: $verde;
+}
+
+.container__equipoC {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 2.5rem;
+}
+
+.card__equipoC {
+  background-color: $verde;
+  width: 30rem;
+  height: 40rem;
+  margin: 8rem;
+  text-align: center;
+  color: black;
+  border-radius: 15px;
+}
+
+.card__equipoC:hover {
+  transform: scale(1.07);
+  transition: all 1s ease;
+}
+
+.card__image__equipoC{
+  margin-bottom: 2rem;
+  width: 25rem;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.h2__equipoC {
+  color: white;
+  padding: 1.5rem;
+  padding-bottom: 2.5rem;
+  font-size: 3rem;
+}
+
+.h2__equipoC a {
+  color: white;
+}
+
+/* TAMAÑO DESKTOP*/
+@media (max-width: 1280px) {
+
+  /* SECCION 2 EQUIPO*/
+
+  .card__equipo {
+    width: 25rem;
+    height: 40rem;
+    margin: 8rem;
+  }
+
+  .card__equipoC {
+    width: 25rem;
+    height: 40rem;
+    margin: 8rem;
+  }
+
+}
+
+/* TAMAÑO TABLET*/
+@media (max-width: 768px) {
+
+  /* SECCION 3 EQUIPO*/
+
+  .seccionTresEquipo {
+    height: 100rem;
+  }
+
+  .card__equipo {
+    width: 25rem;
+    height: 30rem;
+    margin: 5rem;
+    margin-bottom: 10rem;
+  }
+
+  .card__equipoC {
+    width: 25rem;
+    height: 35rem;
+    margin: 5rem;
+  }
+
+}
+
+
+/* TAMAÑO CELULAR*/
+@media (max-width: 414px) {
+
+  /* SECCION 2 EQUIPO*/
+
+  .card__equipo {
+    width: 15rem;
+    height: 30rem;
+    margin: 2rem;
+    padding-top: 2rem;
+  }
+
+  .card__image__equipo{
+    margin-bottom: 1rem;
+    width: 15rem;
+    background-size: cover;
+    border-radius: 50%;
+  }
+
+  /* SECCION 3 EQUIPO*/
+
+  .seccionTresEquipo {
+    height: 80rem;
+  }
+
+  .card__equipoC {
+    width: 15rem;
+    height: 30rem;
+    margin: 2rem;
+    padding-top: 2rem;
+  }
+
+  .card__image__equipoC{
+    margin-bottom: 1rem;
+    width: 15rem;
+    background-size: cover;
+    border-radius: 50%;
+  }
+
+}

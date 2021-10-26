@@ -1,39 +1,200 @@
 .seccionDos {
     background-color: #ffffff;
     padding: 10rem .5rem;
-        .seccionDos__title {
+
+    .seccionDos__title {
         color: $verde;
         text-align: center;
         margin-bottom: .5rem;
         font-size: $tituloSections;
-        }
-            .seccionDos__texto {
-            padding-top: 2rem;
-            color: black;
-            text-align: center;
-            font-size: 2rem;
-            margin: 3rem;
-            }
-        
+    }
+
+    .seccionDos__texto {
+        padding-top: 2rem;
+        color: black;
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 3rem 15rem;
+    }
 }
+
+/* SECCIÓN TRES*/
+
 .seccionTres {
     background-color: $verde;
-    padding: 10rem .5rem;
+}
 
-    .seccionTres__title {
-        color: #ffffff;
-        text-align: center;
-        margin-bottom: .5rem;
-        font-size: $tituloSections;
-    }
-        .seccionTres__texto {
-            padding-top: 2rem;
-            color: rgb(255, 255, 255);
-            text-align: center;
-            font-size: 2rem;
-            padding-bottom: 2rem;
-            margin: 3rem;
+.container__index {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+    padding-bottom: 5rem;
+}
+
+.card__index {
+    width: 25rem;
+    height: 20rem;
+    margin: 8rem;
+    text-align: center;
+    color: white;
+}
+
+.card__index:hover {
+    transform: scale(1.07);
+    transition: all 1s ease;
+  }
+
+.card__image__index{
+    margin-bottom: 2rem;
+}
+
+/* SECCIÓN CUATRO*/
+
+.container__indexC {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+}
+
+.card__indexC {
+    width: 25rem;
+    height: 20rem;
+    margin: 9rem;
+    text-align: center;
+    color: black;
+}
+
+.card__indexC:hover {
+    transform: scale(1.07);
+    transition: all 1s ease;
+  }
+
+.card__image__indexC {
+    margin-bottom: 2.5rem;
+}
+
+
+
+/* TAMAÑO DESKTOP*/
+@media (max-width: 1280px) {
+
+    /* SECCIÓN DOS INDEX*/
+    .seccionDos {
+        padding: 10rem .5rem;
+    
+        .seccionDos__title {
+            margin-bottom: .5rem;
+            font-size: 4rem;
         }
+    
+        .seccionDos__texto {
+            padding-top: 2rem;
+            font-size: 2rem;
+            margin: 3rem 10rem;
+        }
+    }
+
+    /* SECCIÓN TRES*/
+
+    .card__index {
+        width: 19rem;
+        height: 25rem;
+        margin: 6rem;
+        text-align: center;
+        color: white;
+    }
+
+    .card__index h2{
+        font-size: 1.8rem;
+    }
+
+    /* SECCIÓN CUATRO*/
+
+    .container__indexC {
+        padding-bottom: 5rem;
+    }
+
+    .card__indexC {
+        width: 20rem;
+        height: 20rem;
+        margin: 9rem;
+        text-align: center;
+        color: black;
+    }
+
+    .card__image__indexC {
+        margin-bottom: 2.5rem;
+    }
+
+
 
 }
 
+
+
+/* TAMAÑO TABLET*/
+@media (max-width: 768px) {
+
+    /* SECCIÓN DOS INDEX*/
+    .seccionDos {
+        padding: 4rem .4rem;
+    
+        .seccionDos__title {
+            font-size: 3.5rem;
+        }
+    
+        .seccionDos__texto {
+            padding-top: 1.5rem;
+            font-size: 2rem;
+            margin: 3rem 5rem;
+        }
+    }
+
+    /* SECCIÓN TRES*/
+
+    .card__index {
+        width: 23rem;
+        height: 18rem;
+        margin: 5rem;
+    }
+
+    .card__index h2{
+        font-size: 1.7rem;
+    }
+
+    /* SECCIÓN CUATRO*/
+
+    .container__indexC {
+        padding-bottom: 5rem;
+    }
+
+    .card__indexC {
+        width: 23rem;
+        height: 18rem;
+        margin: 5rem;
+    }
+
+    .card__indexC h2 {
+        font-size: 1.7rem;
+    }
+}
+
+
+/* TAMAÑO CELULAR*/
+@media (max-width: 414px) {
+
+    /* SECCIÓN DOS INDEX*/
+    .seccionDos {
+        padding: 4rem .4rem;
+    
+        .seccionDos__title {
+            font-size: 2.9rem;
+        }
+    
+        .seccionDos__texto {
+            font-size: 1.7rem;
+        }
+    }
+}

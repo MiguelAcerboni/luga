@@ -1,22 +1,195 @@
 
-/* CARDS PRODUCTOS */
+
+/* CARDS PRODUCTOS*/
+
+.seccionDosProductos {
+  background-color: white;
+}
+
+.container__productos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 2.5rem;
+
+}
+
+.card__productos {
+  background-color: $verde;
+  width: 40rem;
+  height: 45rem;
+  margin: 8rem;
+  text-align: center;
+  color: black;
+  border-radius: 15px;
+}
+
+.card__productos:hover {
+  transform: scale(1.07);
+  transition: all 1s ease;
+}
+
+.card__image__productos{
+  margin-bottom: 2rem;
+  width: 40rem;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.h2__productos {
+  color: white;
+  padding: 1.5rem;
+  padding-bottom: 2.5rem;
+  font-size: 3rem;
+}
+
+.boton__productos {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  margin-bottom: 0rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.boton__productos:hover {
+  color: $verde;
+}
 
 
-.cards__productos {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 3%;
-  
-    article {
-      display: flex;
-      flex-direction: column;
-      width: 150px;
-      height: 250px;
-      border: 1px solid black;
-      background-color: $verde2;
-      justify-content: space-around;
-      align-items: center;
-      text-align: center;
-    }
+/* SECCIÓN TRES PRODUCTOS*/
+
+.seccionTresProductos {
+  background-color: $verde;
+  margin:0%;
+  padding: 0%;
+}
+.seccionTres__title {
+  color: white;
+  text-align: center;
+  margin-bottom: .5rem;
+  font-size: $tituloSections;
+  padding-top: 10rem;
+}
+
+.seccionTres__texto {
+  padding-top: 2rem;
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 3rem 15rem;
+  padding-bottom: 10rem;
+}
+
+
+/* TAMAÑO DESKTOP*/
+@media (max-width: 1280px) {
+
+  /* CARDS PRODUCTOS*/
+
+  .card__productos {
+    background-color: $verde;
+    width: 30rem;
+    height: 38rem;
+    margin: 5rem;
   }
+
+  .card__image__productos{
+    width: 30rem;
+  }
+
+  /* SECCIÓN TRES PRODUCTOS*/
+
+  .seccionTres__texto {
+    margin: 3rem 10rem;
+  }
+
+}
+
+
+/* TAMAÑO DESKTOP*/
+@media (max-width: 768px) {
+
+  /* CARDS PRODUCTOS*/
+
+  .card__productos {
+    background-color: $verde;
+    width: 27rem;
+    height: 35rem;
+    margin: 4rem;
+  }
+
+  .card__image__productos{
+    width: 27rem;
+  }
+
+  /* SECCIÓN TRES PRODUCTOS*/
+
+  .seccionTres__texto {
+    margin: 3rem 5rem;
+  }
+
+  .seccionTres__title {
+    margin-bottom: .4rem;
+    font-size: 3.5rem;
+    padding-top: 5rem;
+  }
+  
+  .seccionTres__texto {
+    font-size: 2rem;
+    margin: 3rem 5rem;
+    padding-bottom: 5rem;
+  }
+
+}
+
+
+
+/* TAMAÑO CELULAR*/
+@media (max-width: 414px) {
+
+  /* CARDS PRODUCTOS*/
+
+  .card__productos {
+    background-color: $verde;
+    width: 33rem;
+    height: 32rem;
+    margin: 3rem;
+  }
+
+  .card__image__productos{
+    width: 33rem;
+    height: 17rem;
+  }
+
+  .h2__productos {
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+  
+  .boton__productos {
+    font-size: 2rem;
+  }
+
+  /* SECCIÓN TRES PRODUCTOS*/
+
+  .seccionTres__texto {
+    margin: 4rem .4rem;
+  }
+
+  .seccionTres__title {
+    margin-bottom: .2rem;
+    font-size: 2.9rem;
+    padding-top: 5rem;
+  }
+  
+  .seccionTres__texto {
+    font-size: 1.7rem;
+    margin: 3rem 3rem;
+    padding-bottom: 5rem;
+  }
+
+}

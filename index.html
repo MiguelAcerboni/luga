@@ -20,26 +20,32 @@
     <header id="inicio">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid">
-                <img class="imagen_nav" src="imagenes/luga-logo2.png" alt="">
+
+              <div>
+                <a class="navbar-brand" href="index.html">
+                  <img src="imagenes/luga-logo2.png" >
+                </a>
+              </div>
+
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link titulosHeader active" aria-current="page" href="index.html"> Inicio </a>
+                <ul class="navbar-nav" >
+                  <li class="nav-item" >
+                    <a class="nav-link titulosHeader active fs-2 fw-normal"  aria-current="page" href="index.html"> Inicio </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link titulosHeader" href="paginas/productos.html"> Productos </a>
+                    <a class="nav-link titulosHeader fs-2 fw-normal" href="paginas/productos.html"> Productos </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link titulosHeader" href="paginas/equipo.html"> Equipo </a>
+                    <a class="nav-link titulosHeader fs-2 fw-normal" href="paginas/equipo.html"> Equipo </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link titulosHeader" href="paginas/nosotros.html"> Nosotros </a>
+                    <a class="nav-link titulosHeader fs-2 fw-normal" href="paginas/nosotros.html"> Nosotros </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link titulosHeader" href="paginas/contacto.html"> Contacto </a>
+                    <a class="nav-link titulosHeader fs-2 fw-normal" href="paginas/contacto.html"> Contacto </a>
                   </li>
                 </ul>
               </div>
@@ -48,36 +54,13 @@
     </header>
 
     <section class="seccionUno">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="imagenes/fondo hidroponia.jpg" class="d-block w-100" alt="personas-trabajando-en-granja-vertical">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="imagenes/nosotros_foto.png" class="d-block w-100" alt="imagen-frontal-de-invernadero">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="imagenes/fondo-hidroponia-productos.jpg" class="d-block w-100" alt="persona-sosteniendo-lechuga">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-        <h1 class="seccionUno__titulo"> LA COMIDA DEL FUTURO, HOY.</h1>
-        <h2 class="seccionUno__subtitulo"> Producimos verdura sana, limpia, 
-            segura, de la más alta calidad
-            y sin impacto ambiental</h2>
+      <div >
+        <img src="imagenes/fondo-hidroponia.jpg" id="banner__productos" alt="">
+      </div>
+      <h1 class="seccionUno__titulo"> LA COMIDA DEL FUTURO, HOY. </h1>
+      <h2 class="seccionUno__subtitulo"> Producimos verdura sana, limpia, 
+        segura, de la más alta calidad
+        y sin impacto ambiental </h2>
     </section>
 
     <section class="seccionDos">
@@ -89,15 +72,42 @@
     </section>
 
     <section class="seccionTres">
-      <article>
-          <h2 class="seccionTres__title" data-aos="fade-up" data-aos-duration="1500"> ¿Para qué sirve? </h2>
-          <p class="seccionTres__texto" data-aos="fade-up" data-aos-duration="1500"> 
-            Mediante la hidroponia podemos crecer alimentos creando las condiciones exactas para que esta
-          pueda crecer sin problemas. Se puede realizar desde en un invernadero, campo y patio, hasta en un subsuelo
-          o bajo tierra con luz artificial. </p>
-      </article>
+      <section data-aos="fade-up" data-aos-duration="1500" class="container__index">
+        <div class="card__index">
+          <img src="imagenes/1icono.png" alt="1icono" class="card__image__index" width="130px">
+          <h2> Sistema de producción sustentable: Utiliza 90% menos de agua </h2>
+        </div>
+        <div class="card__index">
+          <img src="imagenes/2icono.png" alt="1icono" class="card__image__index" width="130px">
+          <h2> Alta calidad: Producimos alimentos de máxima calidad y uniformidad </h2>
+        </div>
+        <div class="card__index">
+          <img src="imagenes/3icono.png" alt="1icono" class="card__image__index" width="130px">
+          <h2> Procesos productivos altamente eficientes en utilización de recursos</h2>
+        </div>
+        <div class="card__index">
+          <img src="imagenes/4icono.png" alt="1icono" class="card__image__index" width="130px">
+          <h2> Producción en invernadero dentro de un sistema aislado</h2>
+        </div>
+      </section>
     </section>
 
+    <section class="seccionCuatro">
+      <section data-aos="fade-up" data-aos-duration="1500" class="container__indexC">
+        <div class="card__indexC">
+          <img src="imagenes/5icono.png" alt="1icono" class="card__image__indexC" width="130px">
+          <h2> Producido en la ciudad reduciendo huella de carbono en el transporte </h2>
+        </div>
+        <div class="card__indexC">
+          <img src="imagenes/6icono.png" alt="1icono" class="card__image__indexC" width="130px">
+          <h2> Cultivado en áreas urbanas para dar acceso a alimentos frescos y nutritivos </h2>
+        </div>
+        <div class="card__indexC">
+          <img src="imagenes/7icono.png" alt="1icono" class="card__image__indexC" width="130px">
+          <h2> Producido gastando menos agua, menos tierra, sin pesticidas ni fertilizantes </h2>
+        </div>
+      </section>
+    </section>
 
 
     <footer class="footer">

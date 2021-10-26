@@ -1,43 +1,269 @@
-.cajasNosotros {
-    background-color: white;
-    padding: 1rem 1rem;
-    display: grid;
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    grid-template-areas: "unoo    unoo  unoo  cuatroo"
-                        "cincoo  cincoo  cincoo cuatroo"
-                        "doss     doss    doss  doss"
-                        "tress   tress   tress  tress";
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
+/* SECCIÓN 2 NOSOTROS */
+
+.seccionDosNosotros {
+    background-color: #ffffff;
+    padding: 10rem .5rem;
+
+    .seccionDos__titleNosotros {
+        color: $verde;
+        text-align: center;
+        margin-bottom: .5rem;
+        font-size: $tituloSections;
+    }
+
+    .seccionDos__textoNosotros {
+        padding-top: 2rem;
+        color: black;
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 3rem 15rem;
+    }
 }
 
-.box--unoo {
-    grid-area: unoo;
-    font-size: $tituloSections;
+/* SECCIÓN 3 NOSOTROS */
 
+.seccionTresNosotros {
+    background-color: $verde;
+    padding: 5rem .5rem;
+
+    .seccionTres__titleNosotros {
+        color: white;
+        text-align: center;
+        margin-bottom: .2rem;
+        font-size: $tituloSections;
+    }
+
+    .seccionTres__textoNosotros {
+        padding-top: 2rem;
+        color: white;
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 3rem 2rem;
+    }
 }
 
-.box--doss {
-    grid-area: doss;
-    font-size: 4rem;
-    padding-top: 4rem;
-}
-
-.box--tress {
-    grid-area: tress;
-    font-size: 2rem;
+  .container__nosotrosC {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+  }
+  
+  .card__nosotrosC {
+    background-color: $verde;
+    width: 35rem;
+    height: 10rem;
+    margin: 4rem;
+    padding-left: 5rem;
     text-align: center;
-    margin-bottom: 5rem;
+    color: white;
+  }
+  
+  .card__nosotrosC:hover {
+    transform: scale(1.07);
+    transition: all 1s ease;
+  }
+  
+  .h2__nosotrosoC {
+    color: $verde;
+    padding: 1.5rem;
+    padding-bottom: 2.5rem;
+    font-size: 3rem;
+  }
+  
+  
+/* SECCIÓN 4 NOSOTROS */
+
+.seccionCuatroNosotros {
+    background-color: #ffffff;
+    padding: 5rem .5rem;
+
+    .seccionCuatro__titleNosotros {
+        color: $verde;
+        text-align: center;
+        margin-bottom: .5rem;
+        font-size: $tituloSections;
+    }
+
+    .seccionCuatro__textoNosotros {
+        padding-top: 2rem;
+        color: black;
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 3rem 15rem;
+    }
 }
 
-.box--cuatroo {
-    grid-area: cuatroo;
-    background-color: black;
+/* TAMAÑO DESKTOP*/
+@media (max-width: 1280px) {
+
+  /* SECCIÓN 3 NOSOTROS */
+
+  .card__nosotrosC {
+    width: 30rem;
+    height: 8rem;
+    margin: 1rem;
+    padding-left: 5rem;
+  }
+
+  /* SECCIÓN 4 NOSOTROS */
+
+  .container__nosotrosC {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+  }
+  
+  .card__nosotrosC {
+    background-color: $verde;
+    width: 26rem;
+    height: 20rem;
+    margin: 2rem;
+    padding-left: 1rem;
+  }
 }
 
-.box--cincoo {
-    grid-area: cincoo;
-    font-size: 2rem;
-    text-align: center;
+/* TAMAÑO TABLET*/
+@media (max-width: 768px) {
+
+  /* SECCIÓN 2 NOSOTROS */
+
+  .seccionDosNosotros {
+    padding: 4rem .4rem;
+
+    .seccionDos__titleNosotros {
+        font-size: 3.5rem;
+    }
+
+    .seccionDos__textoNosotros {
+        padding-top: 1.5rem;
+        font-size: 2rem;
+        margin: 3rem 5rem;
+    }
+  }
+
+  /* SECCIÓN 3 NOSOTROS */
+
+  .seccionTresNosotros {
+    padding: 4rem .4rem;
+
+    .seccionTres__titleNosotros {
+        font-size: 3.5rem;
+    }
+
+    .seccionTres__textoNosotros {
+        padding-top: 1.5rem;
+        font-size: 2rem;
+        margin: 3rem 5rem;
+    }
+  }
+
+
+  /* SECCIÓN 4 NOSOTROS */
+
+.seccionCuatroNosotros {
+  padding: 4rem .4rem;
+
+  .seccionCuatro__titleNosotros {
+      font-size: 3.5rem;
+  }
+
+  .seccionCuatro__textoNosotros {
+      padding-top: 1.5rem;
+      font-size: 2rem;
+      margin: 3rem 5rem;
+  }
+}
+
+
+  /* SECCIÓN 5 NOSOTROS */
+  
+  .card__nosotrosC {
+    width: 22rem;
+    height: 20rem;
+    margin: 1rem;
+  }
+
+}
+
+
+
+/* TAMAÑO CELULAR*/
+@media (max-width: 414px) {
+
+  /* SECCIÓN 2 NOSOTROS */
+
+  .seccionDosNosotros {
+    padding: 4rem .4rem;
+
+    .seccionDos__titleNosotros {
+        font-size: 2.9rem;
+    }
+
+    .seccionDos__textoNosotros {
+        font-size: 1.7rem;
+    }
+  }
+
+  /* SECCIÓN 3 NOSOTROS */
+
+  .seccionTresNosotros {
+    padding: 4rem .4rem;
+
+    .seccionTres__titleNosotros {
+        font-size: 2.9rem;
+    }
+
+    .seccionTres__textoNosotros {
+        padding-top: 1.5rem;
+        font-size: 1.7rem;
+        margin: 3rem 2rem;
+    }
+  }
+
+  .container__nosotrosC {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+  }
+  
+  .card__nosotrosC {
+    background-color: $verde;
+    width: 10rem;
+    height: 80rem;
+
+  }
+
+
+  /* SECCIÓN 4 NOSOTROS */
+
+.seccionCuatroNosotros {
+  padding: 4rem .4rem;
+
+  .seccionCuatro__titleNosotros {
+      font-size: 2.9rem;
+  }
+
+  .seccionCuatro__textoNosotros {
+      padding-top: 1.5rem;
+      font-size: 1.7rem;
+      margin: 3rem 2rem;
+  }
+}
+
+
+  /* SECCIÓN 5 NOSOTROS */
+  
+  .seccionCinco__titleNosotros {
+    font-size: 1.7rem;
+  }
+
+  .card__nosotrosC {
+    width: 22rem;
+    height: 15rem;
+    margin: 1rem;
+  }
+
 }
